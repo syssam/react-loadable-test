@@ -1,0 +1,17 @@
+{
+	"env": {
+		"NODE_ENV": "production",
+		"BABEL_ENV": "production"
+	},
+	"plugins": [
+		"react-loadable/babel",
+        "dynamic-import-node",
+		"syntax-dynamic-import",
+		[
+		  "import-inspector",
+		  {
+			"serverSideRequirePath": true
+		  }
+		]
+	]
+}
